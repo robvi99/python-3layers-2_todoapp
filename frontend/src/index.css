@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.auth-image {
+  flex: 1;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-image img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  flex: 1;
+  background: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.toggle-buttons button.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0072ff;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background: #0072ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #005ad3;
+}
+
+/* Todo List */
+.todo-container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-form {
+  display: flex;
+  margin: 20px 0;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-list li:hover {
+  background: #f9f9f9;
+}
+
+.todo-info strong {
+  display: block;
+  font-size: 16px;
+}
+
+.todo-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  font-size: 12px;
+  padding: 2px 6px; 
+}
+
+.status.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.todo-actions button {
+  margin-left: 8px;
+}
+
+.todo-list li span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn-delete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-logout {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* AuthPage Animation and Transition*/
+.slide-enter {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s ease;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.4s ease;
+}
+
+/* Hover Button*/
+.btn-delete, .btn-secondary, .btn-primary, .btn-logout {
+  transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+.btn-primary:hover {
+  background: #005ad3;
+  transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+  background: #6c757d;
+  transform: scale(1.05);
+}
+
+.btn-logout:hover {
+  background: #a71d2a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
